@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+:root{
+    box-sizing: border-box;
+    font-family: "Alata", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    background: #EEEEEE;
+}
+
+::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body{
+    margin: 0;
+}
+
+
+.left{
+    display: flex;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    width: 40%;
+    color: #EEEEEE;
+    background-color:#008db9;
+}
+.text{
+    align-items: center;
+}
+h{
+    font-size: 2rem;
+}
+
+.arrow{
+    left: 40%;
+    width: 5%;
+    height: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+
+}
+
+.sel_arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid #008db9;
+}
+
+
+.right{
+    display: flex;
+    right: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    width: 55%;
+    color: black;
+}
+
+.proj{
+    justify-content: center;
+    overflow: auto;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    direction: rtl;
+    font-size: 3rem;
+}
+
+ul li a {
+    display:block;
+}
+   
+ul li a:hover, ul li a:focus {
+    color:red;
+}

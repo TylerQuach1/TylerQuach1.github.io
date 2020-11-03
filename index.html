@@ -5,7 +5,7 @@
     <head>
         <title>Tyler Quach Portfolio Website </title>
         <link rel="stylesheet" href="stylesheet.css">
-        <script rel="scripts" src="script.js"></script>
+        <script rel="scripts" src="script.js" defer></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Tyler Quach's Portfolio Website">
@@ -13,45 +13,76 @@
 
       <body>
 
-          <sec class="left">
+          <section class="left">
             <div class="text">
-                <h>
-                    TYLER QUACH
-                </h>
-                <a href="https://www.linkedin.com/in/tylerquach/" target="_blank">LINKEDIN</a>
-                <a href="https://github.com/TylerQuach1" target="_blank">GITHUB</a>
+                <h> TYLER QUACH</h>
+                <p>
+                    Hi, I am a Computer Science student at Ryerson University. <br>
+                    I like long walks on the beach with my 10 dogs<br>
+                    And a big fan of Macomatic and dotistinkinyeut and dada
+                </p>
+                <a href="https://www.linkedin.com/in/tylerquach/" target="_blank" id=#link>
+                    <img src="linkedin.png" width="48px">
+                </a>
+                <a href="https://github.com/TylerQuach1" target="_blank" id=#git>
+                    <img src="github.png" width="48px">
+                </a>
             </div>
-            
-          </sec>
+          </section>
 
-          <sec class="arrow">
+          <section class="arrow">
               <div class="sel_arrow"></div>
-          </sec>
+          </section>
 
-          <sec class="right">
-                <ul class=" proj">
-                    <li>PROJECT 1</li>
-                    <li>PROJECT 2</li>
-                    <li>PROJECT 3</li>
-                    <li>PROJECT 4</li>
-                    <li>PROJECT 5</li>
-                    <li>PROJECT 6</li>
-                    <li>PROJECT 7</li>
-                    <li>PROJECT 8</li>
-                    <li>PROJECT 9</li>
-                    <li>PROJECT 10</li>
-                    <li>PROJECT 1</li>
-                    <li>PROJECT 2</li>
-                    <li>PROJECT 3</li>
-                    <li>PROJECT 4</li>
-                    <li>PROJECT 5</li>
-                    <li>PROJECT 6</li>
-                    <li>PROJECT 7</li>
-                    <li>PROJECT 8</li>
-                    <li>PROJECT 9</li>
-                    <li>PROJECT 10</li>
-                </ul>
-          </sec>
+          <section class="right">
+                <div class=" project">
+                    <button type="button" onClick="collapse('proj1')" class="collapse">PROJECT 1</button>
+                        <div id="proj1" style="overflow: hidden; height: 0; transition: .5s ease-in-out">
+                            <p>
+                                To sure calm much most long me mean. Able rent long in do we. Uncommonly no it announcing<br>
+                                melancholy an in. Mirth learn it he given. Secure shy favour length all twenty denote. He felicity no an at<br>
+                                packages answered opinions juvenile. <br>
+                            </p>
+                        </div>
+                    <button type="button" onClick="collapse('proj2')" class="collapse">PROJECT 2</button>
+                        <div id="proj2" style="display:none">
+                            <p>This is my project 1 it is about.........</p>
+                        </div>
+                    <button type="button" onClick="collapse('proj3')" class="collapse">PROJECT 3</button>
+                        <div id="proj3" style="display:none">
+                            <p>This is my project 1 it is about.........</p>
+                        </div>
+                    <button type="button" onClick="collapse('proj4')" class="collapse">PROJECT 4</button>
+                        <div id="proj4" style="display:none">
+                            <p>This is my project 1 it is about.........</p>
+                        </div>
+                    <button type="button" onClick="collapse('proj5')" class="collapse">PROJECT 5</button>
+                        <div id="proj5" style="display:none">
+                            <p>This is my project 1 it is about.........</p>
+                        </div>
+                    <button type="button" onClick="collapse('proj6')" class="collapse">PROJECT 6</button>
+                        <div id="proj6" style="display:none">
+                            <p>This is my project 1 it is about.........</p>
+                        </div>
+                    <button type="button" onClick="collapse('proj7')" class="collapse">PROJECT 7</button>
+                        <div id="proj7" style="display:none">
+                            <p>This is my project 1 it is about.........</p>
+                        </div>
+                    <button type="button" onClick="collapse('proj8')" class="collapse">PROJECT 8</button>
+                        <div id="proj8" style="display:none">
+                            <p>This is my project 1 it is about.........</p>
+                        </div>
+                    <button type="button" onClick="collapse('proj9')" class="collapse">PROJECT 9</button>
+                        <div id="proj9" style="display:none">
+                            <p>This is my project 1 it is about.........</p>
+                        </div>
+                    <button type="button" onClick="collapse('proj10')" class="collapse">PROJECT 10</button>
+                        <div id="proj10" style="display:none">
+                            <p>This is my project 1 it is about.........</p>
+                        </div>
+                </div>
+          </section>
+          
       </body>
 
 </html>

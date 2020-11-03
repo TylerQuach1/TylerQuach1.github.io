@@ -21,34 +21,36 @@ body{
     margin: 0;
 }
 
-
 .left{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
     overflow-x: hidden;
-    width: 40%;
+    width: 45%;
     color: #EEEEEE;
     background-color:#008db9;
 }
-.text{
-    align-items: center;
-}
+
 h{
     font-size: 2rem;
 }
 
+#git:hover{
+    background: url("pngwage.png");
+}
+
 .arrow{
-    left: 40%;
+    left: 45%;
     width: 5%;
-    height: 50%;
+    height: 100%;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 45%;
     overflow-x: hidden;
-
 }
 
 .sel_arrow {
@@ -62,7 +64,8 @@ h{
 
 .right{
     display: flex;
-    right: 0;
+    justify-content: flex-end;
+    right: 1%;
     height: 100%;
     position: fixed;
     z-index: 1;
@@ -72,21 +75,33 @@ h{
     color: black;
 }
 
-.proj{
-    justify-content: center;
+.project{
+    width: 100%;
     overflow: auto;
-    overflow-y: scroll;
     margin: 0;
-    padding: 0;
-    list-style-type: none;
+    padding-top: 45vh;
+    padding-bottom: 45vh;
     direction: rtl;
-    font-size: 3rem;
+    font-size: 3vw;
+    scroll-snap-align: center;
+    transition: 0.2s;
 }
 
-ul li a {
-    display:block;
+button{
+    font-size: 3.5rem;
+    font-family: "Alata";
+    text-decoration: none;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    width: 90%;
+    border: none;
+    outline: none;
+    text-align: right;
+    transition: 0.2s linear;
+    color: #131c1f;
 }
-   
-ul li a:hover, ul li a:focus {
-    color:red;
+
+button:hover{
+    font-size: 5vw;
+    overflow: ;
 }

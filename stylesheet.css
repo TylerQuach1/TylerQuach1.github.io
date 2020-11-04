@@ -32,15 +32,11 @@ body{
     overflow-x: hidden;
     width: 45%;
     color: #EEEEEE;
-    background-color:#008db9;
+    background-color:#FF7F50;
 }
 
 h{
     font-size: 2rem;
-}
-
-#git:hover{
-    background: url("pngwage.png");
 }
 
 .arrow{
@@ -58,7 +54,7 @@ h{
     height: 0; 
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
-    border-left: 40px solid #008db9;
+    border-left: 40px solid #FF7F50;
 }
 
 
@@ -70,7 +66,7 @@ h{
     position: fixed;
     z-index: 1;
     top: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     width: 55%;
     color: black;
 }
@@ -103,5 +99,10 @@ button{
 
 button:hover{
     font-size: 5vw;
-    overflow: ;
+}
+
+p.content{
+    padding: 0;
+    font-size: 20px;
+    width: 90%;
 }

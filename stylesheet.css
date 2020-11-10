@@ -7,7 +7,6 @@
     font-size: 20px;
     width: 100%;
     margin: 0;
-    scroll-behavior: smooth;
     background: #EEEEEE;
 }
 
@@ -47,14 +46,16 @@ h{
     z-index: 1;
     top: 45%;
     overflow-x: hidden;
+    transition: 0.2s linear;
 }
 
 .sel_arrow {
     width: 0; 
     height: 0; 
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-left: 40px solid #FF7F50;
+    border-top: 49px solid transparent;
+    border-bottom: 49px solid transparent;
+    border-left: 50px solid #FF7F50;
+    transition: 0.2s linear;
 }
 
 
@@ -73,14 +74,13 @@ h{
 
 .project{
     width: 100%;
-    overflow: auto;
+    overflow: auto; 
     margin: 0;
     padding-top: 45vh;
     padding-bottom: 45vh;
     direction: rtl;
     font-size: 3vw;
-    scroll-snap-align: center;
-    transition: 0.2s;
+    transition: 0.2s linear;
 }
 
 button{
@@ -95,10 +95,6 @@ button{
     text-align: right;
     transition: 0.2s linear;
     color: #131c1f;
-}
-
-button:hover{
-    font-size: 5vw;
 }
 
 p.content{

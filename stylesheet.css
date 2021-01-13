@@ -35,7 +35,7 @@ body{
     background-color:#FF7F50;
 }
 
-h{
+h {
     font-size: 2rem;
 }
 
@@ -59,7 +59,6 @@ h{
     transition: 0.2s linear;
 }
 
-
 .right{
     display: flex;
     justify-content: flex-end;
@@ -72,6 +71,37 @@ h{
     width: 55%;
     color: black;
 }
+#x_button{
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    top: 2.75%;
+    right: 85%;
+    z-index: -1;
+    transform: rotate(135deg);
+    transition: linear 0.35s;
+}
+
+#x_button::after, #x_button::before{
+    content: "";
+    position: absolute;
+    background: #131c1f;
+}
+
+#x_button::after{
+    left: 50%;
+    width: 15%;
+    margin-left: -7.5%;
+    height: 100%;
+}
+#x_button::before{
+    top: 50%;
+    height: 15%;
+    margin-top: -7.5%;
+    width: 100%;
+  }
+
 
 .project{
     width: 100%;
@@ -96,7 +126,7 @@ button{
     font-family: "Alata";
     text-decoration: none;
     overflow: auto;
-    background-color: #EEEEEE;
+    background-color: transparent;
     cursor: pointer;
     width: 90%;
     border: none;
@@ -111,4 +141,5 @@ p.content{
     padding: 0;
     font-size: 20px;
     width: 90%;
+    direction: rtl;
 }

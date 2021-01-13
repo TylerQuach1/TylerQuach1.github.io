@@ -19,8 +19,8 @@ hovering.forEach(hovering =>{
 
 function scrolling(){
     var point = document.querySelector(".project").scrollTop;
-    if (point >= 900){
-        document.querySelector(".project").scrollTop = 900;
+    if (point >= 890){
+        document.querySelector(".project").scrollTop = 890;
     }
 }
 
@@ -31,6 +31,7 @@ function collapse(id){
         document.querySelector(".project").style.setProperty("padding-top", "0vh");
         document.querySelector(".project").style.setProperty("overflow", "hidden");
         document.querySelector(".sel_arrow").style.setProperty("border-left", "0px solid #FF7F50");
+        document.getElementById("x_button").style.setProperty("opacity","1");
     }
     else{
         document.getElementById(id).style.setProperty("overflow", "hidden");
@@ -38,6 +39,7 @@ function collapse(id){
         document.querySelector(".project").style.setProperty("padding-top", "45vh");
         document.querySelector(".project").style.setProperty("overflow","auto");
         document.querySelector(".sel_arrow").style.setProperty("border-left", "50px solid #FF7F50");
+        document.getElementById("x_button").style.setProperty("opacity","0");
     }
 }
 

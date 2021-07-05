@@ -9,6 +9,7 @@
     min-height: 50%;
     margin: 0;
     background: #EEEEEE;
+    display: flex;
 }
 
 ::-webkit-scrollbar{
@@ -26,20 +27,52 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     overflow-x: hidden;
     width: 45%;
     color: #EEEEEE;
     background-color:#FF7F50;
+    animation-duration: 1.5s;
+    animation-name: slideIn;
+}
+
+@keyframes slideIn{
+    0%{
+        width: 120%
+    }
+    100%{
+        width: 45%
+    }
+}
+
+@keyframes arrowSlide{
+    0%{
+        left:120%
+    }
+    100%{
+        left:45%
+    }
+}
+
+@keyframes loading{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 h {
     font-size: 2rem;
 }
 
-.arrow{
+.middle{
     left: 45%;
     width: 5%;
     height: 100%;
@@ -48,6 +81,8 @@ h {
     top: 45%;
     overflow-x: hidden;
     transition: 0.2s linear;
+    animation-duration: 1.5s;
+    animation-name: arrowSlide;
 }
 
 .sel_arrow {
@@ -65,7 +100,7 @@ h {
     right: 1%;
     height: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     overflow: hidden;
     width: 55%;
@@ -100,8 +135,7 @@ h {
     height: 15%;
     margin-top: -7.5%;
     width: 100%;
-  }
-
+}
 
 .project{
     width: 100%;
@@ -118,7 +152,6 @@ h {
     font-size: 5rem;
     font-family: "Alata";
     background-color: #EEEEEE;
-    scroll-snap-align: center;
 }
 
 button{
@@ -142,4 +175,28 @@ p.content{
     font-size: 20px;
     width: 90%;
     direction: rtl;
+    animation-duration: 0.5s;
+    animation-name: loading;
+}
+
+a{
+    margin-right: 10px;
+    text-decoration:none;
+    pointer-events: bounding-box;
+}
+
+svg :hover{
+    fill: #FF5349;
+}
+
+footer{
+    text-align: center;
+    bottom: 3.5rem;
+    position:absolute;
+    font-size: 12px;
+}
+
+.text{
+    animation-duration: 1s;
+    animation-name: loading;
 }

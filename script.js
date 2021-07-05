@@ -16,7 +16,6 @@ hovering.forEach(hovering =>{
     observer.observe(hovering);
 })
 
-
 function scrolling(){
     var point = document.querySelector(".project").scrollTop;
     if (point >= 890){
